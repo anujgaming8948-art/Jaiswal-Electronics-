@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jaiswal Electronics - Ridhaura Bazar, Basti. TV, AC, Fridge, Cooler, Washing Machine, Mixer, Fan, Press, Almirah, Induction, Heater, Lights and more.">
+<title>Jaiswal Electronics | Ridhaura Bazar</title>
+<style>
+:root{--ink:#101827;--muted:#64748b;--bg:#f5f7fa;--card:#fff;--line:#e5eaf0;--accent:#0f172a;--soft:#eef2f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+a{text-decoration:none;color:inherit}button,input{font:inherit}
+.top{background:#111827;color:#fff;text-align:center;padding:8px 14px;font-size:13px}
+header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.3px}
+.logo{width:43px;height:43px;border-radius:13px;background:#111827;color:#fff;display:grid;place-items:center;font-size:25px}
+nav{display:flex;gap:24px;font-weight:700;color:#475569}nav a:hover{color:#111827}
+.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:7px;cursor:pointer}
+.dark{background:#111827;color:#fff}.light{background:#fff;border:1px solid #d8dee8}
+.hero{background:linear-gradient(135deg,#0b1220 0%,#273449 100%);color:#fff}
+.heroIn{max-width:1180px;margin:auto;padding:70px 20px 76px;display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center}
+.pill{display:inline-block;background:#fff;color:#111827;border-radius:50px;padding:7px 12px;font-size:12px;font-weight:900}
+h1{font-size:clamp(39px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:17px 0}
+.hero p{font-size:18px;color:#dce3ed;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+.heroBox{background:#fff;color:#111827;border-radius:22px;padding:27px;box-shadow:0 22px 60px #0005}
+.heroBox h2{margin:0 0 6px;font-size:24px}.heroBox p{color:var(--muted);font-size:15px}
+.heroInfo{display:grid;gap:10px;margin-top:18px}.heroInfo div{background:#f1f5f9;padding:12px;border-radius:11px}
+section{max-width:1180px;margin:auto;padding:65px 20px}.title{text-align:center;margin-bottom:30px}.title h2{font-size:35px;margin:0 0 7px}.title p{color:var(--muted);margin:0}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:23px}.search{flex:1;min-width:220px;padding:13px 15px;border:1px solid #d9e0e8;border-radius:11px;background:#fff;outline:none}.chips{display:flex;gap:8px;overflow:auto;padding-bottom:4px}.chip{white-space:nowrap;padding:10px 14px;border:1px solid #d8dee8;border-radius:30px;background:#fff;cursor:pointer;font-weight:700}.chip.active{background:#111827;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.2s;position:relative}.product:hover{transform:translateY(-4px);box-shadow:0 14px 35px #0f172a12}
+.pic{height:190px;background:#eef2f7;display:grid;place-items:center;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.placeholder{font-size:58px;opacity:.9}.pbody{padding:16px}.pbody h3{margin:0 0 5px;font-size:18px}.pbody p{margin:0 0 13px;color:var(--muted);font-size:13px}.smallBtn{width:100%;padding:10px;border-radius:9px;border:1px solid #d8dee8;background:#fff;font-weight:800;cursor:pointer}.smallBtn:hover{background:#f1f5f9}
+.banner{background:#fff;border:1px dashed #cbd5e1;border-radius:18px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.admin{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}.adminGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{padding:12px;border:1px solid #d9e0e8;border-radius:10px;width:100%}.hint{font-size:13px;color:var(--muted);margin-top:10px}
+.contact{background:#eaf0f6}.contactBox{background:#fff;border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.contactItem{background:#f8fafc;border-radius:12px;padding:17px}.map{margin-top:18px;border-radius:17px;overflow:hidden;border:1px solid var(--line)}iframe{width:100%;height:290px;border:0}
+footer{background:#111827;color:#dbe4ef;text-align:center;padding:30px 20px}.fab{position:fixed;right:18px;bottom:18px;z-index:50;border-radius:50%;width:56px;height:56px;background:#111827;color:#fff;display:grid;place-items:center;font-size:23px;box-shadow:0 8px 25px #0004}
+@media(max-width:900px){nav{display:none}.heroIn{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav{padding:10px 14px}.brand{font-size:16px}.logo{width:37px;height:37px}.heroIn{padding:50px 16px}.heroBox{padding:20px}section{padding:48px 16px}.grid{gap:10px}.pic{height:145px}.pbody{padding:13px}.adminGrid,.contactBox{grid-template-columns:1fr}.banner{display:block}.banner .btn{margin-top:15px;width:100%}}
+</style>
+</head>
+<body>
+<div class="top">🏪 Gram Ridhaura Bazar, Basti &nbsp; | &nbsp; 📞 +91 98891 61186</div>
+<header><div class="nav">
+<a class="brand" href="#"><span class="logo">e</span> JAISWAL ELECTRONICS</a>
+<nav><a href="#products">Products</a><a href="#offers">Offers</a><a href="#contact">Contact</a></nav>
+<a class="btn dark" href="https://wa.me/919889161186?text=Namaste%20Jaiswal%20Electronics%2C%20mujhe%20product%20ki%20jaankari%20chahiye." target="_blank">💬 WhatsApp</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="heroIn">
+<div><span class="pill">RIDHAURA BAZAR • BASTI</span>
+<h1>हर जरूरत का<br>सामान, एक जगह।</h1>
+<p><b>Jaiswal Electronics</b> पर घर और रोजमर्रा की जरूरत के electronics सामान उचित रेट पर उपलब्ध। Product देखें और सीधे WhatsApp पर पूछें।</p>
+<div class="actions"><a class="btn light" href="#products">🛍️ Products देखें</a><a class="btn dark" href="tel:+919889161186">📞 Call करें</a></div></div>
+<div class="heroBox"><h2>Jaiswal Electronics</h2><p>उचित रेट पर Electronics सामान</p><div class="heroInfo">
+<div>📍 <b>पता</b><br>Gram Ridhaura Bazar, Basti</div>
+<div>📞 <b>मोबाइल</b><br>+91 98891 61186</div>
+<div>💬 <b>Product Enquiry</b><br>WhatsApp पर सीधे पूछें</div>
+</div></div>
+</div></section>
+
+<section id="products"><div class="title"><h2>हमारे Products</h2><p>Product पर क्लिक करके जानकारी या WhatsApp enquiry करें।</p></div>
+<div class="tools"><input id="search" class="search" placeholder="🔎 Product खोजें..."></div>
+<div id="chips" class="chips"></div>
+<div id="grid" class="grid"></div>
+</section>
+
+<section id="offers"><div class="banner"><div><h2 style="margin:0 0 5px">🎁 नए Offers और Products</h2><p style="margin:0;color:#64748b">Latest सामान और ऑफर की जानकारी के लिए WhatsApp पर संपर्क करें।</p></div><a class="btn dark" href="https://wa.me/919889161186?text=Namaste%20Jaiswal%20Electronics%2C%20latest%20offers%20bataye." target="_blank">Latest Offer पूछें</a></div></section>
+
+<section><div class="title"><h2>अपने Products जोड़ें</h2><p>यह demo/catalog manager है। फोटो आपके इसी browser में save होगी।</p></div>
+<div class="admin"><div class="adminGrid">
+<input id="name" class="field" placeholder="Product name, जैसे: Voltas AC">
+<input id="cat" class="field" placeholder="Category, जैसे: AC">
+<input id="desc" class="field" placeholder="छोटा description">
+<input id="photo" class="field" type="file" accept="image/*">
+</div><button id="add" class="btn dark" style="margin-top:14px">＋ Product जोड़ें</button><button id="clear" class="btn light" style="margin-top:14px;margin-left:7px">मेरे जोड़े Products हटाएँ</button>
+<div class="hint">⚠️ यह upload सिर्फ आपके device/browser के local catalog में save करता है। Public website पर सभी visitors को वही फोटो दिखाने के लिए online storage/database जोड़ना होगा।</div></div></section>
+
+<section id="contact" class="contact"><div class="title"><h2>संपर्क करें</h2><p>दुकान पर आने से पहले product availability पूछें।</p></div>
+<div class="contactBox">
+<div class="contactItem">📍 <b>दुकान का पता</b><br>Gram Ridhaura Bazar, Basti</div>
+<div class="contactItem">📞 <b>मोबाइल</b><br><a href="tel:+919889161186">+91 98891 61186</a></div>
+<div class="contactItem">💬 <b>WhatsApp</b><br><a href="https://wa.me/919889161186" target="_blank">Message भेजें</a></div>
+<div class="contactItem">🏪 <b>दुकान</b><br>Jaiswal Electronics</div>
+</div>
+<div class="map"><iframe src="https://www.google.com/maps?q=Ridhaura%20Bazar%2C%20Basti%2C%20Uttar%20Pradesh&output=embed" loading="lazy"></iframe></div>
+</section>
+</main>
+<a class="fab" href="https://wa.me/919889161186?text=Namaste%20Jaiswal%20Electronics" target="_blank">💬</a>
+<footer><b>JAISWAL ELECTRONICS</b><br>Gram Ridhaura Bazar, Basti • +91 98891 61186<br><small>© 2026 Jaiswal Electronics</small></footer>
+
+<script>
+const base=[
+["AC","AC","❄️","Air Conditioner"],
+["Fridge","Refrigerator","❄️","Single door & other models"],
+["Cooler","Cooler","💨","Room coolers"],
+["Washing Machine","Washing Machine","🧺","Washing machines"],
+["Mixer","Mixer Grinder","🥤","Kitchen mixer"],
+["Pankha","Fan","🌀","Ceiling & other fans"],
+["Press","Press / Iron","♨️","Electric press"],
+["Almirah","Almirah","🗄️","Almirah models"],
+["Induction","Induction","🔥","Induction cooktop"],
+["Heater","Heater","♨️","Home heaters"],
+["Lights","Lights","💡","Home lighting"],
+["TV","Television","📺","TV models"],
+["Silai Machine","Sewing Machine","🧵","Silai machines"]
+];
+const categories=["सभी","AC","Fridge","Cooler","Washing Machine","Mixer","Pankha","Press","Almirah","Induction","Heater","Lights","TV","Silai Machine"];
+let custom=JSON.parse(localStorage.getItem("jaiswalProducts")||"[]"), active="सभी";
+const grid=document.getElementById("grid"), chips=document.getElementById("chips"), search=document.getElementById("search");
+function wa(name){return "https://wa.me/919889161186?text="+encodeURIComponent("Namaste Jaiswal Electronics, mujhe "+name+" ke baare mein jaankari chahiye.");}
+function render(){
+ let q=search.value.toLowerCase();
+ let all=base.map(x=>({name:x[0],cat:x[1],icon:x[2],desc:x[3]})).concat(custom);
+ let list=all.filter(x=>(active==="सभी"||x.cat===active)&&(!q||x.name.toLowerCase().includes(q)||x.cat.toLowerCase().includes(q)));
+ grid.innerHTML=list.map((x,i)=>`<article class="product"><div class="pic">${x.img?`<img src="${x.img}" alt="${x.name}">`:`<div class="placeholder">${x.icon||"🛒"}</div>`}</div><div class="pbody"><h3>${x.name}</h3><p>${x.desc||"Product available"}</p><a class="smallBtn" href="${wa(x.name)}" target="_blank">💬 WhatsApp पर पूछें</a></div></article>`).join("")||"<p>Product नहीं मिला।</p>";
+}
+chips.innerHTML=categories.map(c=>`<button class="chip ${c===active?"active":""}" data-c="${c}">${c}</button>`).join("");
+chips.onclick=e=>{if(e.target.dataset.c){active=e.target.dataset.c;document.querySelectorAll(".chip").forEach(b=>b.classList.toggle("active",b.dataset.c===active));render()}};
+search.oninput=render;
+document.getElementById("add").onclick=()=>{
+ const n=document.getElementById("name").value.trim(), c=document.getElementById("cat").value.trim()||"अन्य", d=document.getElementById("desc").value.trim();
+ const f=document.getElementById("photo").files[0];
+ if(!n||!f){alert("Product name और photo दोनों चुनें.");return}
+ const r=new FileReader();r.onload=()=>{custom.push({name:n,cat:c,desc:d||"Product available",img:r.result,icon:"🛒"});localStorage.setItem("jaiswalProducts",JSON.stringify(custom));render();document.getElementById("name").value="";document.getElementById("cat").value="";document.getElementById("desc").value="";document.getElementById("photo").value=""};r.readAsDataURL(f);
+};
+document.getElementById("clear").onclick=()=>{if(confirm("आपके जोड़े हुए products हटाएं?")){custom=[];localStorage.removeItem("jaiswalProducts");render()}};
+render();
+</script>
+</body></html>
